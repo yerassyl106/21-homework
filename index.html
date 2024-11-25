@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let usd = 1000;
+        let eur = 500;
+        let kzt = 100000;
+
+        const ttt = (u, e, k) => {
+            while (true) {
+                let order = prompt('1) pizza 20 usd \n 2) sushi - 10 usd \n 3) coffee - 5 usd \n 4) fri - 1 usd \n Для завершения введите "stop"');
+
+                if (order == "stop") {
+                    break;
+                }
+
+                let value = prompt("Чем будете платить? (usd, eur, kzt)");
+
+                if (u <= 0  e <= 0  k <= 0) {
+                    alert('Денег больше нет');
+                    break;
+                }
+
+        
+
+                if (order == "1" && value == "usd") {
+                    u -= 20;
+                } else if (order == "1" && value == "eur") {
+                    e -= 19.19;
+                } else if (order == "1" && value == "kzt") {
+                    k -= 9983.98;
+                }
+
+                
+
+                if (order == "2" && value == "usd") {
+                    u -= 10;
+                } else if (order == "2" && value == "eur") {
+                    e -= 9.6;
+                } else if (order == "2" && value == "kzt") {
+                    k -= 4991.99;
+                }
+
+                
+
+                if (order == "3" && value == "usd") {
+                    u -= 5;
+                } else if (order == "3" && value == "eur") {
+                    e -= 4.8;
+                } else if (order == "3" && value == "kzt") {
+                    k -= 249.99;
+                }
+
+                
+
+                if (order == "4" && value == "usd") {
+                    u -= 1;
+                } else if (order == "4" && value == "eur") {
+                    e -= 0.96;
+                } else if (order == "4" && value == "kzt") {
+                    k -= 499.2;
+                }
+
+            }
+            
+            return  usd: ${u} \n eur: ${e} {/n} kzt: ${k};
+        };
+
+        alert(ttt(  usd, eur, kzt));
+    </script>
+</body>
+</html>
